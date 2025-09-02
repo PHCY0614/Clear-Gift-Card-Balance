@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BalanceCal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BalanceCal</h1>
+
+        <div class="input-group">
+            <label for="balance">Gift Card Balance ($)</label>
+            <input type="number" id="balance">
+        </div>
+
+        <div class="input-group">
+            <label for="fee">Service Fee (%)</label>
+            <input type="number" id="fee">
+        </div>
+
+        <div class="live-calculation">
+            <p>Amount: <span id="liveAmount"></span></p>
+            <p>Fee: <span id="liveFee"></span></p>
+            <p>Total: <span id="liveTotal"></span></p>
+        </div>
+        
+        <button id="clearBtn">Clear</button>
+
+        <div class="result">
+            <p>You should pay: <span id="resultAmount"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
